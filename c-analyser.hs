@@ -962,7 +962,7 @@ main =
                                 let dotPath = x -<.> "dot";
                                 let csvPath = x -<.> "csv";
                                 let g = genGraph cs;
-                                putStrLn ("The cyclometric complexity is: "++ show (cyclometricComplexity g))
+                                putStrLn ("The cyclometric complexity, #nodes, #edges is: "++ show (cyclometricComplexity g) ++ "," ++ show (length ns) ++ "," ++ show (length es))
                                 writeFile dotPath (dotGen input)
                                 let rd = analyseGraph g;
                                 writeFile csvPath (csvFormat rd)
