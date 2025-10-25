@@ -58,8 +58,7 @@ data BinOp =
     Mod |
     LShift |
     RShift |
-    AssnOp Assn |
-    Comma
+    AssnOp Assn
     deriving Eq
 
 instance Show BinOp where
